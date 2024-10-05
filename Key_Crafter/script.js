@@ -84,28 +84,28 @@ async function copyContent(){
         copyMsg.innerText="failed";
     }
 
-    //copyMsg.classList.add("active");//active namki class hogi css mai wo add ho jayegi.
+    copyMsg.classList.add("active");//active namki class hogi css mai wo add ho jayegi.
     setTimeout(() =>{
-        //copyMsg.classList.remove("active")
+        copyMsg.classList.remove("active");
     }, 2000);
 }
 
-// function handleCheckBoxChange(){
-//     checkCount=0;
-//     allCheckBox.forEach((checkbox) => {
-//         if(checkbox.checked)
-//         checkCount++;
-//     });
+function handleCheckBoxChange(){
+    checkCount=0;
+    allCheckBox.forEach((checkbox) => {
+        if(checkbox.checked)
+        checkCount++;
+    });
 
-//     if(passwordLength<checkCount){
-//         passwordLength=checkCount;
-//         handleSlider();
-//     }
-// }
+    if(passwordLength<checkCount){
+        passwordLength=checkCount;
+        handleSlider();
+    }
+}
 
-// allCheckBox.forEach((checkbox) => {
-//     checkbox.addEventListener('change', handleCheckBoxChange);
-// })
+allCheckBox.forEach((checkbox) => {
+    checkbox.addEventListener('change', handleCheckBoxChange);
+})
 
 
 inputSlider.addEventListener('input', (e) => {
